@@ -15,8 +15,8 @@ namespace OSSharp.Tests.NUnit
         [SetUp]
         public void Setup()
         {
-            _user = new User(new HttpClient(), "a34ef9dd30fd8d031caef98c3cf5b071");
-            reception = new SMSReception(new HttpClient(), "a34ef9dd30fd8d031caef98c3cf5b071");
+            _user = new User(new HttpClient(), "");
+            reception = new SMSReception(new HttpClient(), "");
         }
 
         [Test]
