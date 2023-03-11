@@ -6,9 +6,10 @@ An online virtual phone number provider.
 
 ### Sample code
 ```cs
-asddasd
-sdasdsad
-sadasd
-sadasd
-asdasd
+var smsReception = new SMSReception(new HttpClient(), "YOUR API KEY");
+var orderNumber = await smsReception.OrderNumber("vkcom");
+var statistics = await smsReception.GetNumberStatistics("telegram").Price;
+var orderState = await smsReception.GetOrderState();
+var phoneNumber = orderState[0].Number;
+
 ```
